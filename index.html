@@ -1,15 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2.00 Mining</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>2.00 Mining</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>2.00 Mining</h1>
-    <p>Telegram Mining Mini App</p>
+  <div class="app">
+
+    <header class="top">
+      <div>
+        <h1>2.00 Mining</h1>
+        <p>Telegram Mining</p>
+      </div>
+
+      <div class="profile">
+        👤
+      </div>
+    </header>
+
+    <main>
+
+      <section class="balance-card">
+        <p>Total Balance</p>
+        <h2 id="balance">0</h2>
+        <span>2.00 Coins</span>
+      </section>
+
+      <section class="mining-card">
+
+        <div class="mining-info">
+          <span>⛏️ Mining</span>
+          <span id="energy">100 / 100 ⚡</span>
+        </div>
+
+        <button id="mineButton">
+          ⛏️ MINE
+        </button>
+
+        <p id="status">
+          Tap the button to start mining
+        </p>
+
+      </section>
+
+      <section class="stats">
+
+        <div class="stat">
+          <b id="power">10</b>
+          <small>Mining Power</small>
+        </div>
+
+        <div class="stat">
+          <b>1</b>
+          <small>Level</small>
+        </div>
+
+        <div class="stat">
+          <b id="daily">0</b>
+          <small>Daily Reward</small>
+        </div>
+
+      </section>
+
+    </main>
+
+    <nav class="bottom-nav">
+
+      <button>🏠<span>Home</span></button>
+      <button>⛏️<span>Mining</span></button>
+      <button>📋<span>Missions</span></button>
+      <button>🏆<span>Ranking</span></button>
+      <button>👤<span>Profile</span></button>
+
+    </nav>
+
+  </div>
+
+  <script src="app.js"></script>
 
 </body>
 </html>
